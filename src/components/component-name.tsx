@@ -28,7 +28,7 @@ export default function ComponentName({
           style={{ verticalAlign: "middle", marginRight: "5px" }}
         />
       )}
-      &lt;{children} /&gt;
+      &lt;{children}&gt;
     </code>
   );
 }

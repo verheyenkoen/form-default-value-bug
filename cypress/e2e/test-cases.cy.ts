@@ -2,6 +2,7 @@ const TEST_CASES = {
   "<Form /> component + <Link /> component":
     "form-component-plus-link-component",
   "<form /> element + <Link /> component": "form-element-plus-link-component",
+  "<Form /> component + <a /> element": "form-component-plus-a-element",
 };
 
 Object.entries(TEST_CASES).forEach(([name, slug]) => {
