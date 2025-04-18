@@ -1,12 +1,23 @@
-import fs from "node:fs";
-import path from "node:path";
+import Link from "next/link";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 export default async function ViewCode({ testCase }: { testCase: string }) {
-  const code = fs.readFileSync(
-    path.join(process.cwd(), `/src/app/${testCase}/page.tsx`),
-    "utf-8",
+  const response = await fetch(
+    `https://raw.githubusercontent.com/verheyenkoen/form-default-value-bug/refs/heads/main/src/app/${testCase}/page.tsx`,
   );
+
+  if (!response.ok) {
+    return (
+      <Link
+        href={`https://github.com/verheyenkoen/form-default-value-bug/blob/main/src/app/${testCase}/page.tsx`}
+        target="_blank"
+      >
+        View source code
+      </Link>
+    );
+  }
+
+  const code = await response.text();
 
   return (
     <details className="view-code">
