@@ -1,7 +1,6 @@
-import ComponentName from "@/components/component-name";
 import ViewCode from "@/components/view-code";
-
-export const testCase = "form-element-plus-a-element";
+import testCase from "./test-case";
+import Title from "./title";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,15 +10,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </h1>
       {children}
       <ViewCode testCase={testCase} />
-    </>
-  );
-}
-
-export function Title() {
-  return (
-    <>
-      <ComponentName type="html">form</ComponentName> +{" "}
-      <ComponentName type="html">a</ComponentName>
     </>
   );
 }

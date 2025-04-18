@@ -1,9 +1,14 @@
+import formComponentPlusLinkComponentTestCase from "../../src/app/form-component-plus-link-component/test-case";
+import formElementPlusLinkComponentTestCase from "../../src/app/form-element-plus-link-component/test-case";
+import formComponentPlusAElementTestCase from "../../src/app/form-component-plus-a-element/test-case";
+import formElementPlusAElementTestCase from "../../src/app/form-element-plus-a-element/test-case";
+
 const TEST_CASES = {
   "<Form /> component + <Link /> component":
-    "form-component-plus-link-component",
-  "<form /> element + <Link /> component": "form-element-plus-link-component",
-  "<Form /> component + <a /> element": "form-component-plus-a-element",
-  "<form /> element + <a /> element": "form-element-plus-a-element",
+    formComponentPlusLinkComponentTestCase,
+  "<form /> element + <Link /> component": formElementPlusLinkComponentTestCase,
+  "<Form /> component + <a /> element": formComponentPlusAElementTestCase,
+  "<form /> element + <a /> element": formElementPlusAElementTestCase,
 };
 
 Object.entries(TEST_CASES).forEach(([name, slug]) => {
