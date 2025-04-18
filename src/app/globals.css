@@ -61,3 +61,19 @@ h1 .icon {
   height: 1.5em;
   width: 1.5em;
 }
+
+details.view-code {
+  summary {
+    font-family: monospace;
+    font-size: smaller;
+  }
+
+  pre {
+    border: 1px solid silver;
+    font-size: 0.7em !important;
+    padding: 4px !important;
+
+    code {
+    }
+  }
+}

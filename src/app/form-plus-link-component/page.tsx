@@ -1,8 +1,6 @@
 import Form from "next/form";
 import Link from "next/link";
 
-import ComponentName from "@/components/component-name";
-
 export default async function Page({
   searchParams,
 }: {
@@ -12,10 +10,6 @@ export default async function Page({
 
   return (
     <>
-      <h1>
-        <ComponentName type="next">Form</ComponentName> +{" "}
-        <ComponentName type="next">Link</ComponentName>
-      </h1>
       <p>
         <strong>Search query:</strong>{" "}
         <span id="renderedSearchQuery">{search || "(empty)"}</span>
