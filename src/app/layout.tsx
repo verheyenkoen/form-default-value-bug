@@ -38,6 +38,27 @@ export default function RootLayout({
                 Verify if the rendered search query and input value were emptied
               </li>
             </ol>
+
+            <p>&mdash; or &mdash;</p>
+            <p>
+              Clone{" "}
+              <Link
+                href="https://github.com/verheyenkoen/form-default-value-bug"
+                target="_blank"
+              >
+                the repo
+              </Link>{" "}
+              and run{" "}
+              <Link
+                href="https://github.com/verheyenkoen/form-default-value-bug/blob/main/cypress/e2e/test-cases.cy.ts"
+                target="_blank"
+              >
+                the Cypress test
+              </Link>{" "}
+              using:
+              <br />
+              <code>npm test</code>
+            </p>
           </div>
           <main className={styles.main}>{children}</main>
         </div>
