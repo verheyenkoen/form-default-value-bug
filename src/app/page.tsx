@@ -6,7 +6,11 @@ export default function Home() {
     <>
       <h2>Test cases</h2>
       <Link href="/form-component-plus-link-component">
-        <ComponentName type="next">Form</ComponentName> +{" "}
+        ❌ <ComponentName type="next">Form</ComponentName> +{" "}
+        <ComponentName type="next">Link</ComponentName>
+      </Link>
+      <Link href="/form-plus-link-component">
+        ✅ <ComponentName type="html">form</ComponentName> +{" "}
         <ComponentName type="next">Link</ComponentName>
       </Link>
     </>
