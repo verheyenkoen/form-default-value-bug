@@ -17,6 +17,28 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={styles.page}>
+          <div className={styles.info}>
+            <h3>How to test?</h3>
+            <ol className={styles.list}>
+              <li>Click the "Change search query" link</li>
+              <li>Notice the rendered search query and input value change</li>
+              <li>Click the "Empty search query" link</li>
+              <li>
+                Notice the rendered search query and input value are emptied
+              </li>
+              <li>Type a search query in the field</li>
+              <li>Click the "Submit" button</li>
+              <li>Notice the rendered search query and input value change</li>
+              <li>Click the "Change search query" link again</li>
+              <li>
+                Verify if the rendered search query and input value were changed
+              </li>
+              <li>Click the "Empty search query" link again</li>
+              <li>
+                Verify if the rendered search query and input value were emptied
+              </li>
+            </ol>
+          </div>
           <main className={styles.main}>{children}</main>
         </div>
 
