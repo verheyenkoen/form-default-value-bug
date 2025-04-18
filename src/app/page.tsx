@@ -17,6 +17,10 @@ export default function Home() {
         ✅ <ComponentName type="next">Form</ComponentName> +{" "}
         <ComponentName type="html">a</ComponentName>
       </Link>
+      <Link href="/form-element-plus-a-element">
+        ✅ <ComponentName type="html">form</ComponentName> +{" "}
+        <ComponentName type="html">a</ComponentName>
+      </Link>
     </>
   );
 }
