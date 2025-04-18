@@ -27,6 +27,7 @@
 .info {
   color: #333;
   border-right: 1px solid silver;
+  padding-right: 1rem;
 }
 
 .list {

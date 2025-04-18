@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <h2>Test cases</h2>
       <Link href="/form-plus-link-component">
-        <ComponentName>Form</ComponentName> +{" "}
-        <ComponentName>Link</ComponentName>
+        <ComponentName type="next">Form</ComponentName> +{" "}
+        <ComponentName type="next">Link</ComponentName>
       </Link>
     </>
   );

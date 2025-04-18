@@ -33,7 +33,11 @@ body {
 
 a {
   color: blue;
-  text-decoration: underline;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,4 +49,15 @@ a {
 form {
   display: flex;
   gap: 1rem;
+}
+
+.icon {
+  aspect-ratio: 1;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+h1 .icon {
+  height: 1.5em;
+  width: 1.5em;
 }

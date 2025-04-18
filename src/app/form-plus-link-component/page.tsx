@@ -13,8 +13,8 @@ export default async function Page({
   return (
     <>
       <h1>
-        <ComponentName>Form</ComponentName> +{" "}
-        <ComponentName>Link</ComponentName>
+        <ComponentName type="next">Form</ComponentName> +{" "}
+        <ComponentName type="next">Link</ComponentName>
       </h1>
       <p>
         <strong>Search query:</strong>{" "}
