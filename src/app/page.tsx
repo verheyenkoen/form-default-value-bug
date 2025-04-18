@@ -1,25 +1,37 @@
-import ComponentName from "@/components/component-name";
 import Link from "next/link";
+
+import {
+  testCase as formComponentPlusLinkComponentTestCase,
+  Title as FormComponentPlusLinkComponentTitle,
+} from "@/app/form-component-plus-link-component/layout";
+import {
+  testCase as formElementPlusLinkComponentTestCase,
+  Title as FormElementPlusLinkComponentTitle,
+} from "@/app/form-element-plus-link-component/layout";
+import {
+  testCase as formComponentPlusAElementTestCase,
+  Title as FormComponentPlusAElementTitle,
+} from "@/app/form-component-plus-a-element/layout";
+import {
+  testCase as formElementPlusAElementTestCase,
+  Title as FormElementPlusAElementTitle,
+} from "@/app/form-element-plus-a-element/layout";
 
 export default function Home() {
   return (
     <>
       <h2>Test cases</h2>
-      <Link href="/form-component-plus-link-component">
-        ❌ <ComponentName type="next">Form</ComponentName> +{" "}
-        <ComponentName type="next">Link</ComponentName>
+      <Link href={`/${formComponentPlusLinkComponentTestCase}`}>
+        ❌ <FormComponentPlusLinkComponentTitle />
       </Link>
-      <Link href="/form-element-plus-link-component">
-        ✅ <ComponentName type="html">form</ComponentName> +{" "}
-        <ComponentName type="next">Link</ComponentName>
+      <Link href={`/${formElementPlusLinkComponentTestCase}`}>
+        ✅ <FormElementPlusLinkComponentTitle />
       </Link>
-      <Link href="/form-component-plus-a-element">
-        ✅ <ComponentName type="next">Form</ComponentName> +{" "}
-        <ComponentName type="html">a</ComponentName>
+      <Link href={`/${formComponentPlusAElementTestCase}`}>
+        ✅ <FormComponentPlusAElementTitle />
       </Link>
-      <Link href="/form-element-plus-a-element">
-        ✅ <ComponentName type="html">form</ComponentName> +{" "}
-        <ComponentName type="html">a</ComponentName>
+      <Link href={`/${formElementPlusAElementTestCase}`}>
+        ✅ <FormElementPlusAElementTitle />
       </Link>
     </>
   );

@@ -57,9 +57,16 @@ form {
   margin-right: 1rem;
 }
 
-h1 .icon {
-  height: 1.5em;
-  width: 1.5em;
+h1 {
+  small {
+    font-size: 0.75em;
+    color: gray;
+  }
+
+  .icon {
+    height: 1.5em;
+    width: 1.5em;
+  }
 }
 
 details.view-code {

@@ -1,15 +1,28 @@
 import ComponentName from "@/components/component-name";
 import ViewCode from "@/components/view-code";
 
+export const testCase = "form-component-plus-link-component";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <h1>
-        <ComponentName type="next">Form</ComponentName> +{" "}
-        <ComponentName type="next">Link</ComponentName>
+        <Title />
       </h1>
       {children}
-      <ViewCode testCase="form-component-plus-link-component" />
+      <ViewCode testCase={testCase} />
+    </>
+  );
+}
+
+export function Title() {
+  return (
+    <>
+      <ComponentName type="next">Form</ComponentName> +{" "}
+      <ComponentName type="next">Link</ComponentName>{" "}
+      <small>
+        using (<code>defaultValue</code>)
+      </small>
     </>
   );
 }
