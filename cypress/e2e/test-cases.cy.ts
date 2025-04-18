@@ -1,7 +1,7 @@
 const TEST_CASES = {
   "<Form /> component + <Link /> component":
     "form-component-plus-link-component",
-  "<form /> element + <Link /> component": "form-plus-link-component",
+  "<form /> element + <Link /> component": "form-element-plus-link-component",
 };
 
 Object.entries(TEST_CASES).forEach(([name, slug]) => {

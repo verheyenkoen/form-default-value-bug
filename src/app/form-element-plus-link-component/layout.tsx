@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <ComponentName type="next">Link</ComponentName>
       </h1>
       {children}
-      <ViewCode testCase="form-plus-link-component" />
+      <ViewCode testCase="form-element-plus-link-component" />
     </>
   );
 }

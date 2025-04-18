@@ -9,7 +9,7 @@ export default function Home() {
         ❌ <ComponentName type="next">Form</ComponentName> +{" "}
         <ComponentName type="next">Link</ComponentName>
       </Link>
-      <Link href="/form-plus-link-component">
+      <Link href="/form-element-plus-link-component">
         ✅ <ComponentName type="html">form</ComponentName> +{" "}
         <ComponentName type="next">Link</ComponentName>
       </Link>
