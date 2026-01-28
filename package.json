@@ -11,7 +11,7 @@
     "cypress:open": "cypress open --e2e --browser electron"
   },
   "dependencies": {
-    "next": "v16.1.1-canary.24",
+    "next": "v16.1.5",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-syntax-highlighter": "^16.1.0"
