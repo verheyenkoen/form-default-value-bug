@@ -11,19 +11,19 @@
     "cypress:open": "cypress open --e2e --browser electron"
   },
   "dependencies": {
-    "next": "v16.2.11",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "react-syntax-highlighter": "^16.1.0"
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-syntax-highlighter": "*"
   },
   "devDependencies": {
-    "@types/node": "^25.0.7",
-    "@types/react": "^19.2.8",
-    "@types/react-dom": "^19.2.3",
-    "@types/react-syntax-highlighter": "^15.5.13",
-    "cypress": "^15.15.0",
-    "eslint": "9.39.2",
-    "eslint-config-next": "16.1.1",
-    "typescript": "^5"
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/react-syntax-highlighter": "*",
+    "cypress": "*",
+    "eslint": "*",
+    "eslint-config-next": "*",
+    "typescript": "*"
   }
 }
